@@ -3,10 +3,16 @@
     "MyTask2": {},
     "MyTask3": {},
     "MyTask4": {
-        "recognition": "Custom",
-        "custom_recognition": "my_reco_222",
+        "recognition": "DirectHit",
         "action": "Custom",
-        "custom_action": "my_action_111"
+        "custom_action": "enter2choice"
     },
-    "OcrTask": {}
+    "OcrTask": {},
+    "screenshot_test": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "enter.png"
+        ],
+        "threshold": 0.8
+    }
 }

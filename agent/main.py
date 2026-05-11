@@ -3,7 +3,7 @@ import sys
 from maa.agent.agent_server import AgentServer
 from maa.toolkit import Toolkit
 
-import my_action
+import action
 import my_reco
 
 

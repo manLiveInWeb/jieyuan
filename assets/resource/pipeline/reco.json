@@ -1,0 +1,6 @@
+{
+    "number_ocr": {
+        "recognition":  "OCR",
+        "expected": "\\d+"
+    }
+}
