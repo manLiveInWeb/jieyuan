@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 {
+=======
+{   
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
     "enter_changle": {
         "recognition": {
             "type": "Or",
@@ -10,26 +14,52 @@
                             "changle.png"
                         ],
                         "threshold": 0.7,
+<<<<<<< HEAD
                         "roi": [145,92,431,318]
+=======
+                        "roi": [
+                            569,
+                            311,
+                            571,
+                            315
+                        ]
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
                     },
                     {
                         "recognition": "OCR",
                         "expected": [
                             "常乐"
                         ],
+<<<<<<< HEAD
                         "roi": [145,92,431,318]
                     }
                 ]
+=======
+                        "roi": [
+                            569,
+                            311,
+                            571,
+                            315
+                        ]
+                    }
+                ]
+                
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
             }
         },
         "action": {
             "type": "Custom",
+<<<<<<< HEAD
             "param": {
+=======
+            "param":{
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
                 "custom_action": "CenterClick"
             }
         },
         "post_delay": 3000
     },
+<<<<<<< HEAD
     "start_node": {
         "recognition": {
             "type": "TemplateMatch",
@@ -37,6 +67,13 @@
                 "template": [
                     "enter.png"
                 ],
+=======
+    "start_node":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["enter.png"],
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
                 "threshold": 0.7,
                 "roi": [
                     925,
@@ -52,12 +89,21 @@
                 "custom_action": "CenterClick"
             }
         },
+<<<<<<< HEAD
         "post_delay": 4000
     },
     "answer": {
         "recognition": {
             "type": "Or",
             "param": {
+=======
+        "post_delay": 2000
+    },
+    "answer":{
+        "recognition": {
+            "type": "Or",
+            "param":{
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
                 "any_of": [
                     {
                         "recognition": "TemplateMatch",
@@ -66,7 +112,11 @@
                             "answer2.png"
                         ],
                         "threshold": 0.7,
+<<<<<<< HEAD
                         "roi": [
+=======
+                        "roi":[
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
                             794,
                             161,
                             486,
@@ -76,8 +126,12 @@
                     {
                         "recognition": "OCR",
                         "expected": [
+<<<<<<< HEAD
                             "欣然应允",
                             "源石锭"
+=======
+                            "欣然应允", "源石锭"
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
                         ],
                         "roi": [
                             794,
@@ -95,6 +149,7 @@
                 "custom_action": "CenterClick"
             }
         },
+<<<<<<< HEAD
         "post_delay": 4000
     },
     "ensure": {
@@ -104,6 +159,15 @@
                 "template": [
                     "ensure.png"
                 ],
+=======
+        "post_delay": 2000
+    },
+    "ensure":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param":{
+                "template": ["ensure.png"],
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
                 "threshold": 0.7,
                 "roi": [
                     1012,
@@ -119,9 +183,15 @@
                 "custom_action": "CenterClick"
             }
         },
+<<<<<<< HEAD
         "post_delay": 4000
     },
     "hengruchang": {
+=======
+        "post_delay": 2000
+    },
+    "hengruchang":{
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
         "recognition": "Or",
         "any_of": [
             {
@@ -141,6 +211,7 @@
         ],
         "action": "Custom",
         "custom_action": "CenterClick",
+<<<<<<< HEAD
         "post_delay": 4000
     },
     "sure_to_do": {
@@ -149,6 +220,13 @@
             "sure.png",
             "sure2.png"
         ],
+=======
+        "post_delay": 2000
+    },
+    "sure_to_do":{
+        "recognition": "TemplateMatch",
+        "template": ["sure.png", "sure2.png"],
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
         "threshold": 0.7,
         "roi": [
             782,
@@ -158,9 +236,15 @@
         ],
         "action": "Custom",
         "custom_action": "CenterClick",
+<<<<<<< HEAD
         "post_delay": 4000
     },
     "skip": {
+=======
+        "post_delay": 2000
+    },
+    "skip":{
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
         "action": "Click",
         "target": [
             1141,
@@ -168,6 +252,7 @@
             60,
             9
         ],
+<<<<<<< HEAD
         "post_delay": 4000
     },
     "ok": {
@@ -188,6 +273,41 @@
         "post_delay": 4000
     },
     "take_it": {
+=======
+        "post_delay": 2000
+    },
+    "ok":{
+        "recognition":  "Or",
+        "any_of": [
+            {
+                "recognition": "TemplateMatch",
+                "template": ["ok.png"],
+                "roi":[
+                    480,
+                    607,
+                    292,
+                    90
+                ],
+                "threshold": 0.7
+            },
+            {
+                "recognition": "TemplateMatch",
+                "template": ["ok2.png"],
+                "roi": [
+                    480,
+                    607,
+                    292,
+                    90
+                ],
+                "threshold": 0.7
+            }
+        ],
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 2000
+    },
+    "take_it":{
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
         "recognition": "Or",
         "any_of": [
             {
@@ -197,7 +317,11 @@
                     "take_coin2.png"
                 ],
                 "threshold": 0.7,
+<<<<<<< HEAD
                 "roi": [
+=======
+                "roi":[
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
                     811,
                     273,
                     468,
@@ -216,6 +340,7 @@
                     182
                 ]
             }
+<<<<<<< HEAD
         ],
         "action": "Custom",
         "custom_action": "CenterClick",
@@ -231,6 +356,20 @@
         "action": "Custom",
         "custom_action": "CenterClick",
         "post_delay": 4000,
+=======
+        ],  
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 2000
+    },
+    "take_collection": {
+        "recognition": "TemplateMatch",
+        "template": ["take_collection.png", "take_collection2.png"],
+        "threshold": 0.7,
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 2000,
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
         "roi": [
             769,
             99,
@@ -238,6 +377,7 @@
             184
         ]
     },
+<<<<<<< HEAD
     "pass_collections": {
         "action": "Click",
         "target": [
@@ -272,6 +412,15 @@
         "action": "Custom",
         "custom_action": "CenterClick",
         "post_delay": 4000,
+=======
+    "take_candle":{
+        "recognition": "TemplateMatch",
+        "template": ["take_candle.png", "take_candle2.png"],
+        "threshold": 0.7,
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 2000,
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
         "roi": [
             745,
             436,
@@ -281,6 +430,7 @@
     },
     "lirufeng": {
         "recognition": "TemplateMatch",
+<<<<<<< HEAD
         "template": [
             "lrf.png"
         ],
@@ -288,11 +438,22 @@
         "action": "Custom",
         "custom_action": "CenterClick",
         "roi": [
+=======
+        "template": ["lrf.png"],
+        "threshold": 0.7,
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "roi":[
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
             744,
             276,
             536,
             168
         ],
+<<<<<<< HEAD
         "post_delay": 4000
+=======
+        "post_delay": 2000
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
     }
 }

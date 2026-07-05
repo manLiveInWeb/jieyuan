@@ -1,9 +1,17 @@
 {
+<<<<<<< HEAD
     "Reverse": {
+=======
+    "MyTask1": {},
+    "MyTask2": {},
+    "MyTask3": {},
+    "MyTask4": {
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
         "recognition": "DirectHit",
         "action": "Custom",
         "custom_action": "enter2choice"
     },
+<<<<<<< HEAD
     "Reclamation_algorithm": {
         "recognition": "DirectHit",
         "action": "Custom",
@@ -14,5 +22,14 @@
         "recognition": "DirectHit",
         "action": "Custom",
         "custom_action": "save_money_epoch"
+=======
+    "OcrTask": {},
+    "screenshot_test": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "enter.png"
+        ],
+        "threshold": 0.8
+>>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
     }
 }
