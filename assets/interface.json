@@ -41,11 +41,7 @@
     ],
     // 可选的 agent 示例
     "agent": {
-<<<<<<< HEAD
         "child_exec": "E:/miniconda3/envs/jieyuan/python.exe",
-=======
-        "child_exec": "E:/miniconda/envs/jieyuan/python.exe",
->>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
         "child_args": [
             "../agent/main.py"
         ]
@@ -60,25 +56,8 @@
             "entry": "Reclamation_algorithm"
         },
         {
-<<<<<<< HEAD
             "name": "存钱",
             "entry": "jieyuan_save_money"
-=======
-            "name": "参数任务",
-            "entry": "MyTask3",
-            "option": [
-                "任务选项1"
-            ],
-            "pipeline_override": {}
-        },
-        {
-            "name": "带Custom的任务",
-            "entry": "MyTask4"
-        },
-        {
-            "name": "截图测试",
-            "entry": "screenshot_test"
->>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
         }
     ]
 }

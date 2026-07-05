@@ -2,12 +2,9 @@
     "number_ocr": {
         "recognition":  "OCR",
         "expected": "\\d+"
-<<<<<<< HEAD
     },
     "text_ocr": {
         "recognition":  "OCR",
         "expected": ".+"
-=======
->>>>>>> 8ef58890769bf69259c2822db8430ac0e174e8a1
     }
 }
