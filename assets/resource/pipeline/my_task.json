@@ -1,12 +1,18 @@
 {
-    "MyTask1": {},
-    "MyTask2": {},
-    "MyTask3": {},
-    "MyTask4": {
-        "recognition": "Custom",
-        "custom_recognition": "my_reco_222",
+    "Reverse": {
+        "recognition": "DirectHit",
         "action": "Custom",
-        "custom_action": "my_action_111"
+        "custom_action": "enter2choice"
     },
-    "OcrTask": {}
+    "Reclamation_algorithm": {
+        "recognition": "DirectHit",
+        "action": "Custom",
+        // todo
+        "custom_action": "Reclamation_algorithm"
+    },
+    "jieyuan_save_money": {
+        "recognition": "DirectHit",
+        "action": "Custom",
+        "custom_action": "save_money_epoch"
+    }
 }

@@ -1,0 +1,298 @@
+{
+    "enter_changle": {
+        "recognition": {
+            "type": "Or",
+            "param": {
+                "any_of": [
+                    {
+                        "recognition": "TemplateMatch",
+                        "template": [
+                            "changle.png"
+                        ],
+                        "threshold": 0.7,
+                        "roi": [145,92,431,318]
+                    },
+                    {
+                        "recognition": "OCR",
+                        "expected": [
+                            "常乐"
+                        ],
+                        "roi": [145,92,431,318]
+                    }
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "CenterClick"
+            }
+        },
+        "post_delay": 3000
+    },
+    "start_node": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "enter.png"
+                ],
+                "threshold": 0.7,
+                "roi": [
+                    925,
+                    374,
+                    356,
+                    286
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "CenterClick"
+            }
+        },
+        "post_delay": 4000
+    },
+    "answer": {
+        "recognition": {
+            "type": "Or",
+            "param": {
+                "any_of": [
+                    {
+                        "recognition": "TemplateMatch",
+                        "template": [
+                            "answer.png",
+                            "answer2.png"
+                        ],
+                        "threshold": 0.7,
+                        "roi": [
+                            794,
+                            161,
+                            486,
+                            211
+                        ]
+                    },
+                    {
+                        "recognition": "OCR",
+                        "expected": [
+                            "欣然应允",
+                            "源石锭"
+                        ],
+                        "roi": [
+                            794,
+                            161,
+                            486,
+                            211
+                        ]
+                    }
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "CenterClick"
+            }
+        },
+        "post_delay": 4000
+    },
+    "ensure": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "ensure.png"
+                ],
+                "threshold": 0.7,
+                "roi": [
+                    1012,
+                    112,
+                    268,
+                    279
+                ]
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "CenterClick"
+            }
+        },
+        "post_delay": 4000
+    },
+    "hengruchang": {
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "hrc.png",
+                    "hrc2.png"
+                ],
+                "threshold": 0.7,
+                "roi": [
+                    818,
+                    90,
+                    462,
+                    191
+                ]
+            }
+        ],
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 4000
+    },
+    "sure_to_do": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "sure.png",
+            "sure2.png"
+        ],
+        "threshold": 0.7,
+        "roi": [
+            782,
+            60,
+            498,
+            578
+        ],
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 4000
+    },
+    "skip": {
+        "action": "Click",
+        "target": [
+            1141,
+            49,
+            60,
+            9
+        ],
+        "post_delay": 4000
+    },
+    "ok": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "ok2.png",
+            "ok.png"
+        ],
+        "roi": [
+            480,
+            607,
+            292,
+            90
+        ],
+        "threshold": 0.7,
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 4000
+    },
+    "take_it": {
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "take.png",
+                    "take_coin2.png"
+                ],
+                "threshold": 0.7,
+                "roi": [
+                    811,
+                    273,
+                    468,
+                    182
+                ]
+            },
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "收下"
+                ],
+                "roi": [
+                    811,
+                    273,
+                    468,
+                    182
+                ]
+            }
+        ],
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 4000
+    },
+    "take_collection": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "take_collection.png",
+            "take_collection2.png"
+        ],
+        "threshold": 0.7,
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 4000,
+        "roi": [
+            769,
+            99,
+            511,
+            184
+        ]
+    },
+    "pass_collections": {
+        "action": "Click",
+        "target": [
+            617,
+            535
+        ]
+    },
+    "take_ticket": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "take_ticket.png",
+            "take_ticket2.png"
+        ],
+        "threshold": 0.7,
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 4000,
+        "roi": [
+            741,
+            265,
+            539,
+            197
+        ]
+    },
+    "take_candle": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "take_candle.png",
+            "take_candle2.png"
+        ],
+        "threshold": 0.7,
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 4000,
+        "roi": [
+            745,
+            436,
+            535,
+            183
+        ]
+    },
+    "lirufeng": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "lrf.png"
+        ],
+        "threshold": 0.7,
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "roi": [
+            744,
+            276,
+            536,
+            168
+        ],
+        "post_delay": 4000
+    }
+}

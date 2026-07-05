@@ -1,0 +1,286 @@
+{
+    "enter_jieyuan":{
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/enter.png"
+        ],
+        "roi": [1020,520,218,191],
+        "next": ["slide"]
+    },
+    "slide": {
+        "action": "Swipe",
+        "begin": [1134,415],
+        "end": [134,415],
+        "end_hold": 500,
+        "repeat": 5,
+        "next": ["choose_team"]
+    },
+    "choose_team": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/team.png"
+        ],
+        "roi": [989,389,231,133],
+        "next": ["sure_team"]
+    },
+    "sure_team": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/sure.png"
+        ],
+        "roi": [987,488,231,133],
+        "next": ["choose_start"]
+    },
+    "choose_start": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/start.png"
+        ],
+        "roi": [52,411,238,140],
+        "next": ["sure_start"]
+    },
+    "sure_start": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/sure.png"
+        ],
+        "roi": [53,502,238,115]
+    },
+    "recruitment": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/recruitment.png"
+        ],
+        "roi": [235,514,811,77],
+        "next": ["give_up"]
+    },
+    "give_up": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/give_up.png"
+        ],
+        "roi": [842,621,196,99],
+        "next": ["check_sure2"]
+    },
+    "check_sure2": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/sure2.png"
+        ],
+        "roi": [701,460,277,68],
+        "next": []
+    },
+    "enter_game": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/enter_game.png"
+        ],
+        "roi": [1059,205,215,315],
+        "post_wait_freezes": 1000,
+        "next": ["check_sure3"]
+    },
+    "check_sure3": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/sure3.png"
+        ],
+        "pre_wait_freezes": 1000,
+        "roi": [1044,470,139,138]
+    },
+    "enter_box":{
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/enter_box.png"
+        ],
+        "roi": [759,611,141,109]
+    },
+    "coin_view":{
+        "action": "Click",
+        "target": [1124,84,94,27],
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/retry_view.png"
+        ],
+        "roi": [45,294,263,118],
+        "post_wait_freezes": 1000
+    },
+    "retry_throw":{
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/rethrow.png"
+        ],
+        "roi": [845,597,401,75],
+        "post_wait_freezes": 1000,
+        "next": ["check_sure3"]
+    },
+    "throw_target":{
+        "action": "Click",
+        "target": [31,27],
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/target.png"
+        ],
+        "roi": [59,301,816,38],
+        "repeat": 2,
+        "repeat_delay": 500,
+        "next": ["node_check"]
+    },
+    "node_check": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/node.png"
+        ],
+        "roi": [298,212,189,233],
+        "next": ["flash_node"]
+    },
+    "flash_node": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/flash.png"
+        ],
+        "roi": [776,144,93,93],
+        "next": ["check_sure4"]
+    },
+    "check_sure4": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/sure4.png"
+        ],
+        "roi": [919,447,134,79],
+        "next": ["enter_shop"]
+    },
+    "enter_shop": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/enter_shop.png"
+        ],
+        "roi": [1047,454,206,167],
+        "next": ["investment"]
+    },
+    "investment": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/investment.png"
+        ],
+        "roi": [413,161,187,68],
+        "next": ["investment_entrance"]
+    },
+    "investment_entrance": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/investment_entrance.png"
+        ],
+        "roi": [457,274,264,124],
+        "next": ["investment_sure_click"]
+    },
+    "investment_sure_reco": {  
+        "recognition": "TemplateMatch",  
+        "template": ["save_money/investment_sure.png"],  
+        "roi": [901,459,166,68],  
+        "action": "DoNothing",  
+        "next": ["investment_sure_click"]  
+    },  
+    "investment_sure_click": {  
+        "action": "Click",
+        "target": [975,488],
+        "repeat_delay": 200,
+        "repeat": 20
+    },
+    "back_view":{
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch", 
+        "template" : [
+            "save_money/back_view.png"
+        ],
+        "roi": [0,0,84,97]
+    },
+    "exit_game": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/exit_game.png"
+        ],
+        "roi": [0,0,84,97],
+        "next": ["end_game"]
+    },
+    "end_game": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/end_game.png"
+        ],
+        "roi": [1053,266,180,120],
+        "next": ["check_sure5"]
+    },
+    "check_sure5": {
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/sure5.png"
+        ],
+        "roi": [798,467,92,56],
+        "next": ["exit1"]
+    },
+    "exit1":{
+        "action": "Click",
+        "target": [1199,334,59,56],
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/exit1.png"
+        ],
+        "roi": [267,229,252,111],
+        "pre_wait_freezes": 2000,
+        "post_wait_freezes": 2000,
+        "next": ["exit2"]
+    },
+    "exit2":{
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "recognition": "TemplateMatch",
+        "template" : [
+            "save_money/exit2.png"
+        ],
+        "pre_wait_freezes": 2000,
+        "roi": [567,592,142,115]
+    }
+}

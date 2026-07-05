@@ -3,8 +3,9 @@ import sys
 from maa.agent.agent_server import AgentServer
 from maa.toolkit import Toolkit
 
-import my_action
-import my_reco
+import jieyuan_reverse
+import reclamation_algorithm
+import jieyuan_save_money
 
 
 def main():

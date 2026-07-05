@@ -1,0 +1,60 @@
+{
+    "enter_ra_4": {
+        "recognition": "TemplateMatch",
+        "template": ["enter_build.png"],
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 3000,
+        "roi": [921,563,350,119],
+        "next": ["strategy"]
+    },
+    "strategy": {
+        "recognition": "TemplateMatch",
+        "template": ["strategy.png"],
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 1000,
+        "roi": [250,174,354,432],
+        "next": ["confirm"]
+    },
+    "confirm": {
+        "recognition": "TemplateMatch",
+        "template": ["confirm.png"],
+        "action": "Custom",
+        "custom_action": "CenterClick",
+        "post_delay": 3000,
+        "roi": [907,587,354,104],
+        "next": ["build_team"]
+    },
+    "build_team": {
+        "recognition": "TemplateMatch",
+        "template": ["team.png"],
+        "action": "Click",
+        "post_delay": 2000,
+        "roi": [812,109,292,126],
+        "next": ["recruitment"]
+    },
+    "recruitment1": {
+        "recognition": "TemplateMatch",
+        "template": ["recruitment.png"],
+        "action": "Click",
+        "post_delay": 2000,
+        "roi": [1009,615,271,95],
+        "next": ["recruitment_sure"]
+    },
+    "recruitment_sure":{
+        "recognition": "TemplateMatch",
+        "template": ["recruitment_sure.png"],
+        "action": "Click",
+        "post_delay": 2000,
+        "roi": [814,417,265,130],
+        "next": ["start_building"]
+    },
+    "start_building": {
+        "recognition": "TemplateMatch",
+        "template": ["start_building.png"],
+        "action": "Click",
+        "post_delay": 5000,
+        "roi": [842,566,372,120]
+    }
+}
