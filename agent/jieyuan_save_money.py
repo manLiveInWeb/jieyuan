@@ -119,7 +119,7 @@ class SaveMoney(CustomAction):
             print(f"探索第{loop}次结束")
             if lucky:
                 status.update(context)
-            if status.coin_history[-1] == 900:
+            if status.coin_history[-1] >= 900:
                 print("余额已达上限，结束存钱任务")
                 break
         end = time.perf_counter()

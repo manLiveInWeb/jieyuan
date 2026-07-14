@@ -264,13 +264,15 @@
     "exit1":{
         "action": "Click",
         "target": [1199,334,59,56],
+        "repeat": 2,
+        "repeat_delay": 200,
         "recognition": "TemplateMatch",
         "template" : [
             "save_money/exit1.png"
         ],
         "roi": [267,229,252,111],
-        "pre_wait_freezes": 2000,
-        "post_wait_freezes": 2000,
+        "pre_wait_freezes": 1000,
+        "post_wait_freezes": 1000,
         "next": ["exit2"]
     },
     "exit2":{
@@ -280,7 +282,7 @@
         "template" : [
             "save_money/exit2.png"
         ],
-        "pre_wait_freezes": 2000,
+        "pre_wait_freezes": 1000,
         "roi": [567,592,142,115]
     }
 }
